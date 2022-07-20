@@ -195,12 +195,12 @@ if __name__ == "__main__":
     host='192.168.123.105'
     password='123456'
     ssh=ssh_win32(user,host,password,systemroot='c',timeout=5)
-
-    print(ssh.ssh_cpu())
-    print("\n\n\n\n")
-    print(ssh.ssh_disk())
-    print("\n\n\n\n")
-    print(ssh.ssh_memory())
-    print(ssh.ssh_ping(host))
-    print(ssh.ssh_ps())
-    print(ssh.ssh_netstat())
+    ssh.ssh()
+    # print(ssh.ssh_cpu())
+    # print("\n\n\n\n")
+    # print(ssh.ssh_disk())
+    # print("\n\n\n\n")
+    # print(ssh.ssh_memory())
+    # print(ssh.ssh_ping(host))
+    # print(ssh.ssh_ps())
+    # print(ssh.ssh_netstat())
