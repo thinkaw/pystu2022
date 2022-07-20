@@ -10,7 +10,7 @@ disk_total = []
 disk_used = []
 disk_free = []
 disk_percent = []
- 
+
 #获取CPU信息
 def get_cpu_info():
 	cpu_times = psutil.cpu_times()
@@ -51,4 +51,4 @@ if __name__ == '__main__':
 	get_disk_info()
 	for i in range(len(disk_id)):
 		print(u'%s盘空闲率: %s %%' % (disk_id[i],100 - disk_percent[i]))
-	# raw_input("Enter enter key to exit...") 
+	input("Enter enter key to exit...") 
